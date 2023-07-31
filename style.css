@@ -1,0 +1,78 @@
+html, body {
+    background-color: rgb(71, 57, 47);
+    padding: 10px;
+}
+.container-fluid {
+    background-image: url("hut.jpg");
+    height: 300px;
+    background-position: center;
+    
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card {
+    background-color: rgb(71, 57, 47);
+    color: antiquewhite;
+    
+}
+
+.container {
+    text-align: center;
+    background-color: rgb(71, 57, 47); /* Adjust the transparency (alpha) as needed */
+    align-content: center;
+    color: antiquewhite;
+}
+
+.card-text {
+    color: #ffffff;
+}
+#home {
+    top: 0;
+    left: 10;
+    right: 10;
+    bottom: 10;
+    margin: auto;
+}
+
+h1 {
+    color: #ffffff; /* Heading text color */
+    font-size: 36px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+h5 {
+    color: white;
+    font-style: oblique;
+    padding: 20px;
+}
+h6 {
+    padding: 20px;
+}
+
+
+h3 {
+    color:#cbfcc9 ;
+    text-align: left;
+    align-content: baseline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h4 {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100px;
+}
+
+p {
+    margin-top: 10px;
+    align-content: left;
+    padding: 25px;
+    line-height: normal;
+    text-align: left;
+    color: rgb(223, 217, 217);
+    font-size: medium;
+}

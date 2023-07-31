@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now - Unwind Hut Apartel</title>
+    <link rel="icon" type="image/x-icon" href="unwind.png">
+    <link rel="stylesheet" href="book.html">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div class="container-fluid">
+    <h3 style="font-style: italic; color: rgb(2, 1, 0);">Guest Information Booking Form</h3>
+    </div>
+        <form action="submit.php" method="post" style="background-color: bisque;">
+        <div class="row">
+            <div class="col-sm-4">
+            <label for="guestln">Last Name</label>
+            <input id="guestln" type="text" name="guestln"></div>
+            <div class="col-sm-4">
+            <label for="guestfn">First Name</label>
+            <input type="text" id="guestfn" name="guestfn"></div>
+            <div class="col-sm-4">
+            <label for="guestmn">M.I.</label>
+            <input type="text" id="guestmn" name="guestmn"></div>
+        </div>
+        
+        <div class="row">
+          <div class="col-sm-3">
+            <label for="address">Complete Address:</label>
+            </div>
+          <div class="col-sm-3">
+            <input type="text" id="street" name="street" placeholder="House No. & Street">
+          </div>  
+
+          <div class="col-sm-4">
+            <label for="city">City:</label><i>
+              <input id="city" type="text" name="city"></i>
+          </div>
+                    
+          <div class="col-sm-4">
+            <label for="Country">Country:</label><i>
+            <input id="country" type="text" name="country"></i>
+          </div>
+        </div>        
+
+
+
+
+
+
+        <h1>Hotel Reservation Calendar</h1>
+        <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=YOUR_TIME_ZONE" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <p>Click on the dates you want to reserve and then click the "Reserve" button.</p>
+        <form action="reservation.php" method="post">
+        <input type="hidden" name="start_date" id="start_date">
+        <input type="hidden" name="end_date" id="end_date">
+        <input type="submit" value="Reserve">
+        </form>
+
+
+
+
+
+        <div>
+          <label for="hotel"><h4 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Apartment Name: Alpha</h4></label>
+          
+        </div>
+        <div>
+          <label for="checkin">Check-in Date</label>
+          <input type="date" name="checkin">
+        </div>
+        <div>
+          <label for="checkout">Check-out Date</label>
+          <input type="date" name="checkout">
+        </div>
+        <div>
+          <label for="numberofrooms">Number of Rooms</label>
+          <input type="number" name="numberofrooms">
+        </div>
+        <div>
+          <label for="numberofguests">Number of Guests</label>
+          <input type="number" name="numberofguests">
+        </div>
+        <div>
+          <input type="submit" value="Book Now">
+        </div>
+      </form>
+
+</body>
+</html>
